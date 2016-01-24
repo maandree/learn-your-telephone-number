@@ -1,0 +1,26 @@
+NAME
+	learn-your-telephone-number - Learn your telephone number
+
+SYNOPSIS
+	learn-your-telephone-number TELEPHONE-NUMBER
+
+DESCRIPTION
+	learn-your-telephone-number asks you to enter your
+	telephone number. If the entered number is TELEPHONE-NUMBER
+	the program exits with status 0, if not the program will
+	print the differences and exit with status 1.
+
+	It is recommended to make your shell sometimes when
+	opened, starts this program. Or when you log in on your
+	laptop.
+
+EXIT STATUS
+	0	The entered number matched TELEPHONE-NUMBER.
+
+	1	The entered number did not match TELEPHONE-NUMBER.
+
+	2	The command fail.
+
+SEE ALSO
+	No related or similar projects known.
+
