@@ -12,10 +12,10 @@
 
 
 # List of translations to install.
-LOCALES =
+#LOCALES =
 
 # List of man page translations to install.
-MAN_LOCALES =
+#MAN_LOCALES =
 
 # Can change these variables with ./configure in the same why you
 # would configure them when running make.
