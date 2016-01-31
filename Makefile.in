@@ -65,11 +65,11 @@ _HEADER_DIRLEVELS = 0
 _CPPFLAGS = -D'PACKAGE="$(PKGNAME)"' -D'PROGRAM_VERSION="$(_VERSION)"'
 
 # Used by mk/texinfo.mk
-#_TEXINFO_DIRLEVELS = 2
-#_INFOPARTS = 0
-#_HAVE_TEXINFO_MANUAL = yes
-#_HTML_FILES = Free-Software-Needs-Free-Documentation.html  GNU-Free-Documentation-License.html  \
-#              GNU-General-Public-License.html  index.html  Invoking.html  Overview.html
+_TEXINFO_DIRLEVELS = 2
+_INFOPARTS = 0
+_HAVE_TEXINFO_MANUAL = yes
+_HTML_FILES = Free-Software-Needs-Free-Documentation.html  GNU-Free-Documentation-License.html  \
+              index.html  Invoking.html  Overview.html
 
 # Used by mk/man.mk
 _MAN_PAGE_SECTIONS = 1
@@ -79,13 +79,13 @@ _MAN_1 = learn-your-telephone-number
 _COPYING = COPYING
 
 # Used by mk/dist.mk
-#___EVERYTHING_INFO = sleeping-getty titlepage-data content hardcopy-copying  \
-#                     appx/fdl appx/free-software-needs-free-documentation appx/gpl  \
-#                     chap/invoking chap/overview  \
-#                     reusable/macros reusable/paper reusable/titlepage
+___EVERYTHING_INFO = sleeping-getty titlepage-data content hardcopy-copying  \
+                     appx/fdl appx/free-software-needs-free-documentation  \
+                     chap/invoking chap/overview  \
+                     reusable/macros reusable/paper reusable/titlepage
 _SRC = $(foreach B,$(_SBIN),$(foreach F,$(_OBJ_$(B)),$(F).c))
-_EVERYTHING = $(__EVERYTHING_ALL_COMMON) DEPENDENCIES INSTALL NEWS
-#$(foreach F,$(___EVERYTHING_INFO),doc/info/$(F).texinfo)
+_EVERYTHING = $(__EVERYTHING_ALL_COMMON) DEPENDENCIES INSTALL NEWS \
+              $(foreach F,$(___EVERYTHING_INFO),doc/info/$(F).texinfo)
 
 # }}
 
