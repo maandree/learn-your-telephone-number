@@ -2,11 +2,11 @@ NAME
 	learn-your-telephone-number - Learn your telephone number
 
 SYNOPSIS
-	learn-your-telephone-number TELEPHONE-NUMBER
+	learn-your-telephone-number telephone-number
 
 DESCRIPTION
 	learn-your-telephone-number asks you to enter your
-	telephone number. If the entered number is TELEPHONE-NUMBER
+	telephone number. If the entered number is telephone-number
 	the program exits with status 0, if not the program will
 	print the differences and exit with status 1.
 
@@ -15,9 +15,9 @@ DESCRIPTION
 	laptop.
 
 EXIT STATUS
-	0	The entered number matched TELEPHONE-NUMBER.
+	0	The entered number matched telephone-number.
 
-	1	The entered number did not match TELEPHONE-NUMBER.
+	1	The entered number did not match telephone-number.
 
 	2	The command fail.
 
