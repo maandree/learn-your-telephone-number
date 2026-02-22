@@ -172,4 +172,3 @@ usage:
 	fprintf(stderr, "usage: %s your-telephone-number\n", argv0);
 	return 2;
 }
-

@@ -1,22 +1,21 @@
 .TH LEARN-YOUR-TELEPHONE-NUMBER 1 LEARN-YOUR-TELEPHONE-NUMBER
 .SH NAME
-learn-your-telephone-number - Learn your telephone number
+learn-your-telephone-number \- Learn your telephone number
 .SH SYNOPSIS
 .B learn-your-telephone-number
 .I telephone-number
 .SH DESCRIPTION
 .B learn-your-telephone-number
-asks you to enter your telephone number. If the entered number is
-.I telephone-number
-the program exits with status 0, if not the program will print
-the differences and exit with status 1.
+prompts for your telephone number. If the entered number matches
+.IR telephone-number ,
+the program exits with status 0. Otherwise it prints the differences
+and exits with status 1.
 .PP
-It is recommended to make your shell sometimes when opened, starts
-this program. Or when you log in on your laptop.
+It is recommended to run this program when you open a shell, or when
+you log in on your laptop.
 .SH OPTIONS
 None.
-.SH
-EXIT STATUS
+.SH "EXIT STATUS"
 .TP
 0
 The entered number matched
@@ -27,6 +26,6 @@ The entered number did not match
 .IR telephone-number .
 .TP
 2
-The command fail.
+The command failed.
 .SH "SEE ALSO"
-No related or similar projects known.
+No related or similar projects are known.
